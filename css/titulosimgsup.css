@@ -4,6 +4,7 @@
     grid-template-rows: 1fr 1fr;
     height: 100vh;
     padding: 15vh;
+    justify-content: center;
     
     .contBuscador {
         justify-self: end;
@@ -235,41 +236,3 @@
         
 }
 
-@media (max-width: 320px) {
-
-    .contenedor {
-        display: block;
-        padding-top: 15vh;
-        padding-bottom: 15vh;
-        padding-left: 10%;
-        padding-right: 10%;
-
-        .contBuscador {
-                            
-            .buscador{                
-                    
-                input {
-                    padding: 2vh 6vh;                    
-                }
-
-                img {
-                    display: none;
-                 }
-            
-            }
-        }
-
-        .titulo {
-            
-            a {
-                padding: 2vh 9vh; 
-                font-size: 17px;
-                
-                img {
-                    display: none;
-                }
-            }
-        }
-    }
-        
-}
