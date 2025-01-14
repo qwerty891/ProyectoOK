@@ -1,0 +1,170 @@
+.seccion1 {
+  margin-top: 10%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .galeria1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+    .primero {
+      grid-column: span 2;
+    }
+
+    .ultimas {
+      grid-column: span 5;
+      position: relative;
+
+      .textos {
+        position: absolute;
+        transform: translateY(-100%);
+        font-size: 30px;
+        padding: 20px;
+      }
+
+      .textosUno {
+        color: white;
+      }
+
+      .textosDos {
+        color: black;
+        background-color: white;
+        width: 100%;
+      }
+    }
+
+    .imgsec1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .contenidoseccion1 {
+    display: grid;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+    text-align: justify;
+
+
+    .botones {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      align-items: center;
+
+      .medio {
+        background-color: transparent;
+        border-radius: 48px;
+        height: fit-content;
+        font-size: 20px;
+        padding: 12px;
+      }
+
+      .direcciones {
+        background-color: transparent;
+        border: none;
+      }
+
+      .prev {
+        color: gray;
+      }
+
+      .next {
+        color: orange;
+      }
+    }
+
+    .textos {
+      font-size: 48px;
+      text-align: right;
+
+      h6 {
+        color: orange;
+        margin-bottom: 10px;
+        font-size: clamp(1.875rem, 5vw, 2.5rem);
+      }
+      h5 {
+        color: black;
+        margin-bottom: 10px;
+        font-size: clamp(3.813rem, 5vw, 5rem);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .seccion1 {
+    margin-top: 20%;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    .galeria1 {
+      .primero {
+        display: none;
+      }
+      .segundo {
+        grid-column: span 10;
+      }
+      .tercero {
+        grid-column: span 2;
+      }
+      /*.textosultimas {lu
+        display: none;
+      }*/
+      
+     .textosDos{
+        display: none;
+      }
+      
+      .textos{
+        /**este hay que poner sobre la primera imagen*/
+        display: none;
+      }
+    }
+    .contenidoseccion1{
+      display: none;
+    }
+    .contenidoseccion1 .botones {
+      display: none;
+    }
+    .contenidoseccion1 .textos {
+      display: block;
+      font-size: 30px; /* tamaño de worldwide gallery */
+      margin-top: 20px; /* Ajusta el margen superior para crear un espacio antes de "Worldwide gallery" */
+    }
+    .contenidoseccion1 h5 {
+      display: none;
+      /* Elimina Properties for sale */
+    }
+  }
+  .titulodevelopments {
+    margin-bottom: 20px; /* Ajusta el margen inferior para crear un espacio debajo del contenido */
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1151px){
+  .seccion1{
+    .contenidoseccion1{
+      padding-right: 10px;
+      padding-left: 10px;
+      .textos{
+        font-size: 30px;
+        h6{
+          font-size: 20px;
+        }
+        h5{
+          font-size: 30px;
+        }
+      }
+      .botones{
+        .medio{
+          font-size: 15px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+

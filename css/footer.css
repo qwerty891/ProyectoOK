@@ -1,0 +1,155 @@
+footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 50px;
+
+  .negro {
+    color: white;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+
+    .enlaces {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 30px;
+
+      .primera {
+        align-self: self-end;
+        
+      }
+
+      .segunda {
+        align-self: center;
+      }
+
+      .tercera {
+        align-self: self-end;
+
+        #separado {
+          margin-top: 20px;
+        }
+      }
+
+      .medio {
+        justify-self: center;
+      }
+
+      .ultima {
+        text-align: right;
+        align-self: self-end;
+      }
+
+      ul {
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    .copy {
+      border-top: solid 2px white;
+      .parrafo1 {
+        margin: 20px 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .gris {
+    background-color: #26282b;
+    width: 90%;
+    margin: auto;
+    transform: translateY(-25%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr */
+    align-items: center;
+
+    .segunda {
+      display: grid;
+      padding: 100px;
+      gap: 10px;
+
+      input {
+        background-color: transparent;
+        border: solid 1px gray;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-size: 20px;
+      }
+
+      button {
+        background-color: transparent;
+        border: solid 1px orange;
+        color: orange;
+        border-radius: 100px;
+        padding: 10px 20px;
+        font-size: 30px;
+        width: 60%;
+        justify-self: end;
+      }
+
+      .parrafo2 {
+        /**name**/
+        margin-left: 20px;
+        color: white;
+        font-size: 20px;
+      }
+    }
+
+    #textFooter {
+      font-size: 60px;
+      color: white;
+      justify-self: center;
+
+      span {
+        color: orange;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  
+  footer {
+    .gris {
+      display: none;
+    }
+
+    .negro {
+      .enlaces {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 18%;
+        padding-bottom: 13%;
+        row-gap: 16%;
+
+        .primera {
+          grid-column: span 2;
+        }
+
+        .medio {
+          font-size: 22.5px;
+          margin-top: 10px;
+          justify-self: baseline;
+          font-weight: lighter;
+          color: #aaa;
+        }
+        
+        .ultima {
+          
+          text-align: left;
+          justify-self: baseline;
+          
+          margin-top: 30px;
+        }
+      }
+      .copy {
+        display: none;
+      }
+    }
+  }
+}
+
+

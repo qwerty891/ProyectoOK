@@ -1,0 +1,36 @@
+.redes {
+    position: fixed;
+    z-index: 1000;
+    top: 46.8vh;
+    left: 2.6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1vh 1vh 1vh 1vh 1vh;
+    gap: 2vh;
+    width: 1%;
+    justify-items: start;
+    color: rgba(126, 126, 126, 1);
+
+    
+
+    p {
+        transform: rotate(90deg);
+        transform-origin: 10%;
+        display: inline-block;
+        margin-bottom: 2vh;
+    }
+
+    #rayitaredes {
+        margin-top: 5vh;
+        margin-left: 10%;
+        border: 1px solid;        
+        height: 7vh;
+        width: 0.05%;        
+    }
+}
+
+@media (max-width: 320px) {
+.redes {
+    display: none;
+}
+}

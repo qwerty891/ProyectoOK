@@ -1,0 +1,51 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grey1 {
+  color: rgba(126, 126, 126, 1);
+}
+
+.grey2 {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.f1{font-family: "PF Regal Display Pro";}
+
+.f2{
+  font-family: "brandon-grotesque";
+  font-style: normal;
+  font-weight: 390;
+  font-size: 16px;
+  line-height: 16px;  
+}
+
+.f3{
+  font-family: "brandon-grotesque black";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PFRegalDisplayPro-Regular';
+}
+
+@font-face {
+  font-family: "PF Regal Display Pro";
+  src: url("../fonts/PFR/PFRegalDisplayPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "brandon-grotesque";
+  src: url("../fonts/brandon/Brandon_reg.otf");
+}
+
+@font-face {
+  font-family: "brandon-grotesque black";
+  src: url("../fonts/brandon/Brandon_Grotesque_black.otf");
+}

@@ -1,0 +1,159 @@
+.luxury {
+  width: 100%;
+  .tituloluxury {
+    display: grid;
+    font-size: 40px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 400px;
+    color: orange;
+    height: 47px;
+    top: 1763px;
+  }
+
+  .titulodevelopments {
+    display: grid;
+    font-size: 80px;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 500px;
+    color: black;
+    height: 47px;
+    top: 1763px;
+  }
+}
+
+.seccion2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 10px;
+  padding: 100px;
+
+}
+
+.img2 {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.c5,
+.c4 {
+  margin-left: 30px;
+}
+
+.c4 {
+  font-size: 30px;
+}
+.c5 {
+  font-size: 24px;
+  color: gray;
+}
+/**bloque eliminado mientras no se ejecuta el media**/
+.bloque-imagenes {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .seccion2 {
+    padding: 40px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .seccion2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/**segunda mediaquery aplicado 
+@media (max-width: 600px)
+**/
+@media (min-width: 601px) and (max-width: 946px){
+  .seccion2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .bloque-imagenes{
+    display: none;
+   }
+}
+  
+@media (max-width: 600px) {
+  .seccion2 {
+    display: none; /* Elimina la sección 2 */
+  }
+ .bloque-imagenes{
+  margin-block-start: 60px;
+ }
+  
+  .luxury {
+    *.titulodevelopments::before {
+      content: "Worldwide gallery";
+      display: block;
+      color: orange; 
+      font-size: 30px; 
+      font-weight: 500; 
+      line-height: 40px;
+      text-align: left; /* Alinea el texto a la izquierda */
+      margin-inline-end: auto;
+      }
+      .titulodevelopments {
+          font-family: "PF Regal Display Pro";
+          font-size: 45px;
+          font-weight: 500;
+          line-height: 60px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;        
+        }
+
+      .tituloluxury {
+        display: none; /* Elimina "Luxury Properties" */
+      }
+  }  
+ 
+  .c4,
+  .c5 {
+    display: none;
+  }
+  
+  .bloque-imagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bloque-imagenes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .ultima.f1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; /* Centra el div horizontalmente */
+  }
+
+ .primera {
+    font-size: 23px;
+    font-weight: 390;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+/* centra el texto del footer */
+  .ultima.f1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto; /* Centra el div horizontalmente */
+  }
+}
