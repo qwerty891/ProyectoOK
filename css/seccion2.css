@@ -1,11 +1,13 @@
 .luxury {
+  margin-top: 5%;
   width: 100%;
   .tituloluxury {
     display: grid;
+    font-family: "PF Regal Display Pro";
     font-size: 40px;
-    text-align: center;
+    font-weight: 400;
     line-height: 45px;
-    font-weight: 400px;
+    text-align: center;
     color: orange;
     height: 47px;
     top: 1763px;
@@ -13,10 +15,11 @@
 
   .titulodevelopments {
     display: grid;
+    font-family: "PF Regal Display Pro";
     font-size: 80px;
-    text-align: center;
+    font-weight: 500;
     line-height: 45px;
-    font-weight: 500px;
+    text-align: center;
     color: black;
     height: 47px;
     top: 1763px;
